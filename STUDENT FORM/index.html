@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="birthDate">Birth Date (MM/DD/YYYY):</label>
+            <input type="text" id="birthDate" name="birthDate" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" id="postalCode" name="postalCode" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber">
+
+            <label for="workNumber">Work Number:</label>
+            <input type="text" id="workNumber" name="workNumber">
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="courses">Courses:</label>
+            <select id="courses" name="courses" required>
+                <option value="">Select a course</option>
+                <option value="Course1">Course1</option>
+                <option value="Course2">Course2</option>
+                <option value="Course3">Course3</option>
+                <option value="Course4">Course4</option>
+                <option value="Course5">Course5</option>
+                <option value="Course6">Course6</option>
+                <option value="Course7">Course7</option>
+                <option value="Course8">Course8</option>
+                <option value="Course9">Course9</option>
+                <option value="Course10">Course10</option>
+            </select>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Submit Application</button>
+            <button type="button" id="clearButton">Clear Fields</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
